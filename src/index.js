@@ -44,8 +44,7 @@ function returnFirstArgument(a) {
    returnFnResult(() => 'привет') вернет 'привет'
  */
 function returnFnResult(fn) {
-  a = fn();
-  return a;
+  return fn();
 }
 returnFnResult(function(arg) {
   return arg;
@@ -68,7 +67,7 @@ function returnCounter(number) {
   var a = number;
 
   return function() {
-    return a = a + 1;
+    return ++a;
   }
 }
 
