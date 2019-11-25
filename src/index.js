@@ -121,7 +121,7 @@ if (!(fn instanceof Function)) {
    - number не является числом (с текстом "number is not a number")
    - какой-либо из аргументов div является нулем (с текстом "division by 0")
  */
-function calculator() {
+function calculator(number = 0) {
   if (!isFinite(number)) {
     throw new Error('number is not a number');
 } else {
