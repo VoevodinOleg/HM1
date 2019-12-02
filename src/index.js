@@ -98,7 +98,7 @@ function findError(where) {
  */
 function deleteTextNodes(where) {
   for (const node of where.childNodes) {
-      if (node.nodeType == '3') {
+      if (node.nodeType === '3') {
           where.removeChild(node);
       }
   }
